@@ -7,7 +7,7 @@ client.on('ready', () => {
 
 client.on('ready', function(){	
     var ms = 40000 ;	
-    var setGame = ['by Fras#9999','عندما تحب عدوك يحس بتفاهته','اختار صديقك لاتختار جحيمك'];	
+    var setGame = ['عندما تحب عدوك يحس بتفاهته','اختار صديقك لاتختار جحيمك'];	
     var i = -1;	
     var j = 0;	
     setInterval(function (){	
