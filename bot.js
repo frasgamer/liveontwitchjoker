@@ -5,18 +5,11 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-});
+})
 
 
 
-
-
-
-
-
-
-
-const adminprefix = "Z";
+const adminprefix = "-";
 const devs = ['307666420743798784','313377631783485440'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
@@ -40,8 +33,6 @@ if (message.content.startsWith(adminprefix + 'streaming')) {//fras
     message.channel.sendMessage(`**تم تغيير تويتش البوت إلى  ${argresult}**`)//fras
 }
 });
-
-
 
 
 client.login(process.env.BOT_TOKEN);
